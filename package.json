@@ -1,0 +1,20 @@
+{
+  "name": "component-tests-challenge",
+  "version": "1.0.0",
+  "description": "Cucumber with javascript",
+  "scripts": {
+    "cucumberjs": "cucumber-js test/features/",
+    "cucumberjs-report": "cucumber-js test/features/ -f html:test/report/cucumber_report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/daniellef_cit/component-tests-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/daniellef_cit/component-tests-challenge#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.3.1",
+    "cucumber-html-reporter": "^5.5.0"
+  }
+}

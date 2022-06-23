@@ -1,29 +1,22 @@
-# README #
+# Dependências
+```bash
+npm install
+```
+# Executar cucumberjs
+```bash
+npm run cucumber-js
+```
+# Executar cucumberjs com relatório
+```bash
+npm run cucumber-js-report
+```
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# Capacitação em Teste de Componentes - Gherkin e Cucumber
 
-### What is this repository for? ###
+A finalidade desse projeto é apresentar um desafio com cucumber usando javascript, para medir a proficiência ainda em nível básico.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+1) No arquivo de feature criar cenários para adição, subtração, multiplicação e divisão de dois números utilizando a sintaxe gherkin em português.
+2) No arquivo /src/lib/Calculator.js criar as funções correspondentes aos cenários acima.
+3) No arquivo de step definitions criar os steps do arquivo de feature.
+4) Criar uma tag para cada cenário e uma principal e executar uma a uma alterando o package.json.
+5) Por último vamos gerar o relatório do cucumber em formato html para ver o resultado do desafio.
