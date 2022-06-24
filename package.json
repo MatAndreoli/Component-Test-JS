@@ -4,6 +4,11 @@
   "description": "Cucumber with javascript",
   "scripts": {
     "cucumberjs": "cucumber-js test/features/",
+    "cucumberjs:tag": "cucumber-js test/features/ -t",
+    "soma": "npm run cucumberjs:tag @soma",
+    "sub": "npm run cucumberjs:tag @sub",
+    "mult": "npm run cucumberjs:tag @mult",
+    "div": "npm run cucumberjs:tag @div",
     "cucumberjs-report": "cucumber-js test/features/ -f html:test/report/cucumber_report.html"
   },
   "repository": {
