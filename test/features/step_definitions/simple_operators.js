@@ -1,9 +1,11 @@
 const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
-let Calculator = require('../../../src/lib/Calculator');
+let Calculator;
 
 let result = 0;
-Given('que eu tenha uma calculadora', () => {});
+Given('que eu tenha uma calculadora', () => {
+  Calculator = require('../../../src/lib/Calculator');
+});
 
 When('eu chamo o método {string} com {string} e {string}', (method, n1, n2) => {
   switch (method) {
@@ -24,5 +26,4 @@ When('eu chamo o método {string} com {string} e {string}', (method, n1, n2) => 
 
 Then('deve retornar {string}', (res) => {
   assert.equal(parseInt(res), result);
-  result = 0;
 });
